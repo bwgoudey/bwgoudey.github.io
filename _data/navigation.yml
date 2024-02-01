@@ -20,3 +20,25 @@ main:
     
   - title: "CV"
     url: /cv/
+
+publications_nav: 
+    - title: "Publications"
+      children: 
+        - title: "Journal articles"
+          url: /publications/#journal-articles
+        - title: "Conference proceedings"
+          url: /publications/#conference-proceedings
+        - title: "Pre-prints and submissions"
+          url: /publications/#submissions-and-pre-prints
+        - title: "Patents"
+          url: /publications/#patents
+
+talks_nav: 
+    - title: "Talks and presentations"
+      children: 
+        - title: "Oral presentations"
+          url: /talks/#oral-presentations
+        - title: "Educational"
+          url: /talks/#educational
+        - title: "Posters"
+          url: /talks/#posters

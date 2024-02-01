@@ -2,7 +2,9 @@
 layout: archive
 title: "Talks and presentations"
 permalink: /talks/
-author_profile: true
+author_profile: false
+sidebar:
+  nav: talks_nav
 ---
 
 {% if site.talkmap_link == true %}
@@ -11,6 +13,23 @@ author_profile: true
 
 {% endif %}
 
+<h2 id="oral-presentations">Oral presentations</h2>
 {% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
+  {% if post.path contains '/oral_presentation' %}
+    {% include archive-single-talk.html %}
+  {% endif %}
+{% endfor %}
+
+<h2 id="educational">Educational talks and tutorials</h2>
+{% for post in site.talks reversed %}
+  {% if post.path contains '/educational' %}
+    {% include archive-single-talk.html %}
+  {% endif %}
+{% endfor %}
+
+<h2 id="posters">Posters</h2>
+{% for post in site.talks reversed %}
+  {% if post.path contains '/poster' %}
+    {% include archive-single-talk.html %}
+  {% endif %}
 {% endfor %}
